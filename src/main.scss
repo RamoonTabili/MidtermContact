@@ -1,0 +1,104 @@
+$primary-color: #282828;
+$secondary-color: #E6E6E6;
+
+body {
+    font-family: sans-serif;
+    background: $primary-color;
+    height: 100%;
+}
+h1 {
+    color: $secondary-color;
+    text-align: center;
+}
+h2{
+    color: $primary-color;
+    text-align: center;
+    line-height: 70vh;
+}
+li {
+    list-style: none;
+}
+a {
+    color: $secondary-color;
+    text-decoration: none;
+}
+
+.contacts {
+    height: 80vh;
+    &.container {
+        display: block;
+        margin: auto;
+        float: left;
+        width: 32%;
+        border: 2px solid $secondary-color;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        overflow-y: scroll;
+    }
+    &.view {
+        display: block;
+        margin: auto;
+        float: left;
+        width: 64%;
+        background: $secondary-color;
+        border: 2px solid $secondary-color;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    &.list {
+        margin: auto;
+        height: 82vh;
+    }
+}
+
+.contact {
+    margin: 5px auto;
+    &.item {
+        display: inline;
+        float: left;  
+        width: 100%;
+    }
+    &.pic {
+        display: inline;
+        border-radius: 100%;
+        margin-right: 20px;
+        float: left;
+        width: 50px;
+    }
+    &.name {
+        display: inline;
+    }
+}
+
+.info {
+    &.pic {
+        margin: 30px auto 0 auto;
+        display: block;
+    }
+    &.name {
+        line-height: normal;
+    }
+    &.quick {
+        margin-top: -15px;
+        text-align: center;
+    }
+    &.male{
+        color: #3296FF;
+    }
+    &.female{
+        color: #DC50E6;
+    }
+    &.email {
+        color: $primary-color;
+    }
+    &.main {
+        display: block;
+        float: left;
+        width: 50%;
+    }
+    &.address {
+        display: block;
+        float: left;
+        width: 48%;
+    }
+}
